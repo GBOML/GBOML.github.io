@@ -1,6 +1,5 @@
 body {
   width: 100vw;
-  height: 100vh;
   background-color: #353945;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
@@ -19,10 +18,10 @@ a {
 }
 
 main {
-  padding: 2rem 5rem 5rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 section {
@@ -43,7 +42,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #353945;
+  background-color: #23262e;
   height: 100px;
 }
 
@@ -51,11 +50,17 @@ nav {
   ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 40px;
 
     li {
       a {
         font-weight: 300;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+      }
+      a:hover {
+        color: #00bfff;
       }
     }
   }
@@ -72,9 +77,6 @@ nav {
 }
 
 /* Intro */
-
-#intro {
-}
 
 .section-img {
   height: 20rem;
@@ -101,6 +103,57 @@ h2 {
   font-weight: 300;
 }
 
+@media (max-width: 1250px) {
+  .intro-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-img {
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+  nav {
+    ul {
+      li {
+        a {
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Links */
+
+.main-links {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.link-icons {
+  display: flex;
+  gap: 4rem;
+}
+
+.link-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: color 0.2s;
+  gap: 2px;
+}
+
+.link-icons a:hover {
+  color: #00bfff;
+}
+
 /* Papers */
 
 #papers {
@@ -115,4 +168,13 @@ h2 {
   h3 {
     margin-bottom: 0.5rem;
   }
+}
+
+footer {
+  background-color: #23262e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
 }
