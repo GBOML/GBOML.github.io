@@ -11,28 +11,43 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-   
-<link rel="icon" type="image/png" href="./assets/gboml.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-
+    <link rel="icon" type="image/png" href="./assets/gboml.png" />
   </head>
   <body>
     <header>
       <div class="logo-div">
         <a href="#intro">
-        <img src="./assets/gboml.png" alt="GBOML logo" class="logo" /></a>
+          <img src="./assets/gboml.png" alt="GBOML logo" class="logo"
+        /></a>
         <a href="#intro"><h1>GBOML</h1></a>
       </div>
       <nav>
         <ul>
-          <li><a href="#papers"><i class="fa-solid fa-newspaper"></i><p>Papers</p></a></li>
           <li>
-            <a href="https://gboml.readthedocs.io/en/latest/about_gboml.html" target="_blank"
-              ><i class="fa-brands fa-readme"></i><p>Documentation</p></a
+            <a href="#papers"
+              ><i class="fa-solid fa-newspaper"></i>
+              <p>Papers</p></a
             >
           </li>
-          <li><a href="https://github.com/GBOML/GBOML" target="_blank"><i class="fa-brands fa-github"></i><p>GitHub</p></a></li>
+          <li>
+            <a
+              href="https://gboml.readthedocs.io/en/latest/about_gboml.html"
+              target="_blank"
+              ><i class="fa-brands fa-readme"></i>
+              <p>Documentation</p></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/GBOML/GBOML" target="_blank"
+              ><i class="fa-brands fa-github"></i>
+              <p>GitHub</p></a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -40,60 +55,71 @@
       <section id="intro">
         <h2>Introduction</h2>
         <div class="intro-content">
-        <div class="intro-text">
-          <p>
-            <span class="bold">The Graph-Based Optimization Modeling Language </span>(GBOML) is a modeling
-            language for mathematical programming designed and implemented at
-            the University of Liège, Belgium. GBOML enables the easy
-            implementation of a broad class of structured mixed-integer linear
-            programs typically found in applications ranging from energy system
-            planning to supply chain management.
-          </p>
+          <div class="intro-text">
+            <div>
+              <span class="bold"
+                >The Graph-Based Optimization Modeling Language </span
+              >(GBOML) is a modeling language for mathematical programming
+              designed and implemented at the University of Liège, Belgium.
+              GBOML enables the easy implementation of a broad class of
+              structured mixed-integer linear programs typically found in
+              applications ranging from energy system planning to supply chain
+              management.
+            </div>
 
-          <p>
-            More precisely, the language is particularly well-suited for
-            representing problems involving the <span class="bold">optimization of discrete-time
-            dynamical systems over a finite time horizon</span> and possessing a block
-            structure that can be encoded by a <span class="bold">hierarchical hypergraph</span>. 
+            <div>
+              More precisely, the language is particularly well-suited for
+              representing problems involving the
+              <span class="bold"
+                >optimization of discrete-time dynamical systems over a finite
+                time horizon</span
+              >
+              and possessing a block structure that can be encoded by a
+              <span class="bold">hierarchical hypergraph</span>.
+            </div>
+            <div>
+              The language combines elements of both algebraic and
+              object-oriented modeling languages in order to :
+              <ul>
+                <li>facilitate problem encoding and model re-use</li>
+                <li>speed up model generation</li>
+                <li>expose problem structure to specialised solvers</li>
+                <li>and simplify post-processing.</li>
+              </ul>
+            </div>
 
-        </p>
-        <p>
-            The language combines elements of both algebraic and object-oriented
-            modeling languages in order to :
-            <ul>
-                <li> facilitate problem encoding and model
-            re-use</li>
-            <li>speed up model generation</li>
-            <li> expose problem structure to
-            specialised solvers</li>
-            <li>and simplify post-processing.</li>
-            </ul>
-          </p>
-
-          <p>
-            The GBOML parser, which is implemented in Python, turns GBOML input
-            files into hierarchical graph data structures representing
-            optimization models. The associated tool provides both a
-            command-line interface and a Python API to construct models, and
-            directly interfaces with a variety of open source and commercial
-            solvers, including structure-exploiting ones.
-          </p>
-        </div>
-        <img src="./assets/gboml.png" alt="GBOML logo" class="section-img" />
+            <div>
+              The GBOML parser, which is implemented in Python, turns GBOML
+              input files into hierarchical graph data structures representing
+              optimization models. The associated tool provides both a
+              command-line interface and a Python API to construct models, and
+              directly interfaces with a variety of open source and commercial
+              solvers, including structure-exploiting ones.
+            </div>
+          </div>
+          <img src="./assets/gboml.png" alt="GBOML logo" class="section-img" />
         </div>
       </section>
       <section id="links" class="main-links">
-  <div class="link-icons">
-    <a href="https://gboml.readthedocs.io/en/latest/about_gboml.html" target="_blank" class="doc-link">
-      <i class="fa-brands fa-readme fa-3x"></i>
-      <div>Documentation</div>
-    </a>
-    <a href="https://github.com/GBOML/GBOML" target="_blank" class="github-link">
-      <i class="fa-brands fa-github fa-3x"></i>
-      <div>GitHub</div>
-    </a>
-  </div>
-</section>
+        <div class="link-icons">
+          <a
+            href="https://gboml.readthedocs.io/en/latest/about_gboml.html"
+            target="_blank"
+            class="doc-link"
+          >
+            <i class="fa-brands fa-readme fa-3x"></i>
+            <div>Documentation</div>
+          </a>
+          <a
+            href="https://github.com/GBOML/GBOML"
+            target="_blank"
+            class="github-link"
+          >
+            <i class="fa-brands fa-github fa-3x"></i>
+            <div>GitHub</div>
+          </a>
+        </div>
+      </section>
       <section id="papers">
         <h2>Papers</h2>
         <div>
@@ -102,266 +128,325 @@
             <ul>
               <li>
                 <a
-                  href="https://www.tandfonline.com/doi/pdf/10.1080/10556788.2023.2246169" target="_blank"
+                  href="https://www.tandfonline.com/doi/pdf/10.1080/10556788.2023.2246169"
+                  target="_blank"
                   >Miftari, B., Berger, M., Derval, G., Louveaux, Q., & Ernst,
-                  D. (2024). 
-                   <span class="bold">
- GBOML: a structure-exploiting optimization
-                  modelling language in Python.
+                  D. (2024).
+                  <span class="bold">
+                    GBOML: a structure-exploiting optimization modelling
+                    language in Python.
                   </span>
-                  Optimization Methods and
-                  Software, 39(1), 227-256.</a
+                   Optimization Methods and Software, 39(1), 227-256.</a
                 >
               </li>
               <li>
-                <a href="https://orbi.uliege.be/handle/2268/309261" target="_blank">
+                <a
+                  href="https://orbi.uliege.be/handle/2268/309261"
+                  target="_blank"
+                >
                   Miftari, B., Derval, G., Berger, M., & Ernst, D. (2023, July).
-                   <span class="bold">
- GBOML: A modelling tool for structured MILPs.
-                  </span>
-                  In The 23rd
-                  Conference of the International Federation of Operational
-                  Research Societies.</a
+                  <span class="bold">
+                    GBOML: A modelling tool for structured MILPs. </span
+                  >Bar In The 23rd Conference of the International Federation of
+                  Operational Research Societies.</a
                 >
               </li>
               <li>
-                <a href="https://joss.theoj.org/papers/10.21105/joss.04158" target="_blank"
+                <a
+                  href="https://joss.theoj.org/papers/10.21105/joss.04158"
+                  target="_blank"
                   >Miftari, B., Berger, M., Djelassi, H., & Ernst, D. (2022).
                   <span class="bold">
- GBOML: Graph-based optimization modeling language.
+                    GBOML: Graph-based optimization modeling language.
                   </span>
-                  Journal of
-                  Open Source Software, 7(72), 4158.</a
+                   Journal of Open Source Software, 7(72), 4158.</a
                 >
               </li>
             </ul>
           </div>
         </div>
+
         <div>
-          
-<h3>Papers from the Smart Grids Lab using GBOML</h3>
-<div>
-  <ul>
-    <li>
-      <a href="https://www.sciencedirect.com/science/article/pii/S0306261924024152?casa_token=uTMa757inJoAAAAA:JJKk3Lrceoq75RSCDt3mg795hz2Q4yco78ap1i4r5d8MBcysgHJKJ8koIMHYt9au9bxki8zZcU4" target="_blank">
-        Mbenoun, J., Benzerga, A., Miftari, B., Detienne, G.,
-        Deschuyteneer, T., Vazquez, J., ... & Ernst, D. (2025).
-        <span class="bold">
-          Integration of offshore energy into national energy system: A
-          case study on Belgium.
-        </span>
-        Applied Energy, 382, 125031.
-      </a>
-    </li>
-    <li>
-      <a href="https://arxiv.org/abs/2507.07681" target="_blank">
-        Larbanois, A., Dachet, V., Dubois, A., Fonteneau, R., &
-        Ernst, D. (2025).
-        <span class="bold">
-          Ammonia, Methane, Hydrogen and Methanol
-          Produced in Remote Renewable Energy Hubs: a Comparative
-          Quantitative Analysis.
-        </span>
-        arXiv preprint arXiv:2507.07681.
-      </a>
-    </li>
-    <li>
-      <a href="https://www.sciencedirect.com/science/article/pii/S2352484725001258" target="_blank">
-        Dachet, V., Dubois, A., Miftari, B., Fonteneau, R., & Ernst,
-        D. (2025).
-        <span class="bold">
-          Remote Renewable Energy Hubs: A taxonomy.
-        </span>
-        Energy Reports, 13, 3112-3120.
-      </a>
-    </li>
-    <li>
-      <a href="https://orbi.uliege.be/bitstream/2268/329187/1/RREH-For-Energy-Security.pdf" target="_blank">
-        Dachet, V., & Ernst, D. (2025, March).
-        <span class="bold">
-          Remote Renewable Energy Hub: a concept for improving energy security.
-        </span>
-        In Working session on decarbonization between the Walloon
-        Parliament (Belgium) and the Parliament of North Rhine
-        Westphalia (Germany).
-      </a>
-    </li>
-    <li><a href="https://matheo.uliege.be/handle/2268.2/23238" target="_blank">Delcour, A. (2025). <span class="bold">Future electricity mix and the role of natural gas in Western Europe's carbon-free transition.</span></a></li>
-    <li>
-        <a href="https://arxiv.org/abs/2410.14443">Miftari, B., Louveaux, Q., Ernst, D., & Derval, G. (2024). <span class="bold">Sensitivity analysis for linear changes of the constraint matrix of a linear program.</span> arXiv preprint arXiv:2410.14443.</a>
-    </li>
-    <li>
-      <a href="https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2021.671279/full" target="_blank" >
-        Dauchat, L., Dachet, V., Fonteneau, R., & Ernst, D. (2024).
-        <span class="bold">
-          Waste Heat Recovery in Remote Renewable Energy Hubs.
-        </span>
-        In Proceedings of ECOS 2024-The 37th International Conference
-        on Efficiency, Cost, Optimization, Simulation and
-        Environmental Impact of Energy Systems.
-      </a>
-    </li>
-    <li>
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0301479724012489" target="_blank">
-        Victor, D., Amina, B., Diederik, C., Francesco, C., Raphaël,
-        F., & Damien, E. (2024).
-        <span class="bold">
-          Towards CO2 valorization in a multi
-          remote renewable energy hub framework with uncertainty
-          quantification.
-        </span>
-        Journal of Environmental Management, 363,
-        121262.
-      </a>
-    </li>
-    <li>
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306261923019700" target="_blank">
-        Fonder, M., Counotte, P., Dachet, V., de Séjournet, J., &
-        Ernst, D. (2024).
-        <span class="bold">
-          Synthetic methane for closing the carbon
-          loop: Comparative study of three carbon sources for remote
-          carbon-neutral fuel synthetization.
-        </span>
-        Applied Energy, 358,
-        122606.
-      </a>
-    </li>
-     <li>
-                <a href="https://matheo.uliege.be/handle/2268.2/19896" target="_blank"
-                  >Swerdtfegers, H. (2024). 
-                    <span class="bold">
-                  Travail de fin d'études et stage
-                  [BR]-Travail de fin d'études: Optimization of E-fuels
-                  Production and Water Utilisation in Remote Renewable Energy
-                  Hub with Carbon Capture and Storage [BR]-Stage.
+          <h3>Papers from the Smart Grids Lab using GBOML</h3>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.sciencedirect.com/science/article/pii/S0306261924024152?casa_token=uTMa757inJoAAAAA:JJKk3Lrceoq75RSCDt3mg795hz2Q4yco78ap1i4r5d8MBcysgHJKJ8koIMHYt9au9bxki8zZcU4"
+                  target="_blank"
+                >
+                  Mbenoun, J., Benzerga, A., Miftari, B., Detienne, G.,
+                  Deschuyteneer, T., Vazquez, J., ... & Ernst, D. (2025).
+                  <span class="bold">
+                    Integration of offshore energy into national energy system:
+                    A case study on Belgium.
+                  </span>
+                  Applied Energy, 382, 125031.
+                </a>
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2507.07681" target="_blank">
+                  Larbanois, A., Dachet, V., Dubois, A., Fonteneau, R., & Ernst,
+                  D. (2025).
+                  <span class="bold">
+                    Ammonia, Methane, Hydrogen and Methanol Produced in Remote
+                    Renewable Energy Hubs: a Comparative Quantitative Analysis.
+                  </span>
+                  arXiv preprint arXiv:2507.07681.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.sciencedirect.com/science/article/pii/S2352484725001258"
+                  target="_blank"
+                >
+                  Dachet, V., Dubois, A., Miftari, B., Fonteneau, R., & Ernst,
+                  D. (2025).
+                  <span class="bold">
+                    Remote Renewable Energy Hubs: A taxonomy.
+                  </span>
+                  Energy Reports, 13, 3112-3120.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://orbi.uliege.be/bitstream/2268/329187/1/RREH-For-Energy-Security.pdf"
+                  target="_blank"
+                >
+                  Dachet, V., & Ernst, D. (2025, March).
+                  <span class="bold">
+                    Remote Renewable Energy Hub: a concept for improving energy
+                    security.
+                  </span>
+                  In Working session on decarbonization between the Walloon
+                  Parliament (Belgium) and the Parliament of North Rhine
+                  Westphalia (Germany).
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://matheo.uliege.be/handle/2268.2/23238"
+                  target="_blank"
+                  >Delcour, A. (2025).
+                  <span class="bold"
+                    >Future electricity mix and the role of natural gas in
+                    Western Europe's carbon-free transition.</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2410.14443"
+                  >Miftari, B., Louveaux, Q., Ernst, D., & Derval, G. (2024).
+                  <span class="bold"
+                    >Sensitivity analysis for linear changes of the constraint
+                    matrix of a linear program.</span
+                  >
+                  arXiv preprint arXiv:2410.14443.</a
+                >
+              </li>
+              <li>
+                <a target="_blank">
+                  Dauchat, L., Dachet, V., Fonteneau, R., & Ernst, D. (2024).
+                  <span class="bold">
+                    Waste Heat Recovery in Remote Renewable Energy Hubs.
+                  </span>
+                  In Proceedings of ECOS 2024-The 37th International Conference
+                  on Efficiency, Cost, Optimization, Simulation and
+                  Environmental Impact of Energy Systems.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.sciencedirect.com/science/article/abs/pii/S0301479724012489"
+                  target="_blank"
+                >
+                  Victor, D., Amina, B., Diederik, C., Francesco, C., Raphaël,
+                  F., & Damien, E. (2024).
+                  <span class="bold">
+                    Towards CO2 valorization in a multi remote renewable energy
+                    hub framework with uncertainty quantification.
+                  </span>
+                  Journal of Environmental Management, 363, 121262.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.sciencedirect.com/science/article/abs/pii/S0306261923019700"
+                  target="_blank"
+                >
+                  Fonder, M., Counotte, P., Dachet, V., de Séjournet, J., &
+                  Ernst, D. (2024).
+                  <span class="bold">
+                    Synthetic methane for closing the carbon loop: Comparative
+                    study of three carbon sources for remote carbon-neutral fuel
+                    synthetization.
+                  </span>
+                  Applied Energy, 358, 122606.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://matheo.uliege.be/handle/2268.2/19896"
+                  target="_blank"
+                  >Swerdtfegers, H. (2024).
+                  <span class="bold">
+                    Travail de fin d'études et stage [BR]-Travail de fin
+                    d'études: Optimization of E-fuels Production and Water
+                    Utilisation in Remote Renewable Energy Hub with Carbon
+                    Capture and Storage [BR]-Stage.
                   </span>
                 </a>
               </li>
-    <li>
-      <a href="https://arxiv.org/abs/2307.04244" target="_blank">
-        Cauz, M., Bolland, A., Miftari, B., Perret, L., Ballif, C., &
-        Wyrsch, N. (2023).
-        <span class="bold">
-          Reinforcement Learning for Joint Design and
-          Control of Battery-PV Systems.
-        </span>
-        arXiv preprint
-        arXiv:2307.04244.
-      </a>
-    </li>
-    <li>
-      <a href="https://orbi.uliege.be/handle/2268/299668" target="_blank">
-        Miftari, B., Derval, G., & Ernst, D. (2023, July).
-        <span class="bold">
-          Sizing and
-          Operations of Energy Systems Using GBOML.
-        </span>
-        In Company
-        meetings.
-      </a>
-    </li>
-    <li><a href="https://orbi.uliege.be/handle/2268/299668" target="_blank">Miftari, B., Derval, G., & Ernst, D. (2023). <span class="bold">Optimal Sizing and Operations Of Energy Systems Using GBOML.</span></a></li>
-    <li>
-      <a href="https://orbi.uliege.be/handle/2268/301220" target="_blank">
-        Miftari, B., Derval, G., & Ernst, D. (2023, March).
-        <span class="bold">
-          Tutorial: “An Introduction To Sizing And Operations of Energy
-          Systems with GBOML”.
-        </span>
-        In 2nd International workshop on" Open
-        Source Modeling and Simulation of Energy Systems" OSMSES
-        2023.
-      </a>
-    </li>
-   <li>
-      <a href="https://orbi.uliege.be/handle/2268/303651" target="_blank">
-        Miftari, B., Berger, M., Derval, G., & Ernst, D. (2023,
-        June).
-        <span class="bold">
-          Exploiting structure in MILP: a modeler’s perspective.
-        </span>
-        In SIAM OP23.
-      </a>
-    </li>
-    
-  </ul>
-</div>
+              <li>
+                <a href="https://arxiv.org/abs/2307.04244" target="_blank">
+                  Cauz, M., Bolland, A., Miftari, B., Perret, L., Ballif, C., &
+                  Wyrsch, N. (2023).
+                  <span class="bold">
+                    Reinforcement Learning for Joint Design and Control of
+                    Battery-PV Systems.
+                  </span>
+                  arXiv preprint arXiv:2307.04244.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://orbi.uliege.be/handle/2268/299668"
+                  target="_blank"
+                >
+                  Miftari, B., Derval, G., & Ernst, D. (2023, July).
+                  <span class="bold">
+                    Sizing and Operations of Energy Systems Using GBOML.
+                  </span>
+                  In Company meetings.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://orbi.uliege.be/handle/2268/299668"
+                  target="_blank"
+                  >Miftari, B., Derval, G., & Ernst, D. (2023).
+                  <span class="bold"
+                    >Optimal Sizing and Operations Of Energy Systems Using
+                    GBOML.</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://orbi.uliege.be/handle/2268/301220"
+                  target="_blank"
+                >
+                  Miftari, B., Derval, G., & Ernst, D. (2023, March).
+                  <span class="bold">
+                    Tutorial: “An Introduction To Sizing And Operations of
+                    Energy Systems with GBOML”.
+                  </span>
+                  In 2nd International workshop on" Open Source Modeling and
+                  Simulation of Energy Systems" OSMSES 2023.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://orbi.uliege.be/handle/2268/303651"
+                  target="_blank"
+                >
+                  Miftari, B., Berger, M., Derval, G., & Ernst, D. (2023, June).
+                  <span class="bold">
+                    Exploiting structure in MILP: a modeler’s perspective.
+                  </span>
+                  In SIAM OP23.
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <div>
           <h3>Other papers using GBOML</h3>
           <div>
             <ul>
-                <li><a href="https://aseestant.ceon.rs/index.php/jouproman/article/view/57672" target="_blank">Lemenkova, P. (2025). <span class="bold">Python-based statistical analysis of the ecological variables in the Italian Alps.</span> Journal of Process Management and New Technologies, 13(1-2), 102-112.</a></li>
-                
               <li>
-                <a href="https://www.sciencedirect.com/science/article/pii/S2666792424000283" target="_blank"
+                <a
+                  href="https://aseestant.ceon.rs/index.php/jouproman/article/view/57672"
+                  target="_blank"
+                  >Lemenkova, P. (2025).
+                  <span class="bold"
+                    >Python-based statistical analysis of the ecological
+                    variables in the Italian Alps.</span
+                  >
+                  Journal of Process Management and New Technologies, 13(1-2),
+                  102-112.</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://www.sciencedirect.com/science/article/pii/S2666792424000283"
+                  target="_blank"
                   >Hoffmann, M., Schyska, B. U., Bartels, J., Pelser, T.,
                   Behrens, J., Wetzel, M., ... & Stolten, D. (2024).
-                    <span class="bold">
-                A review of
-                  mixed-integer linear formulations for framework-based energy
-                  system models.
-                    </span>
+                  <span class="bold">
+                    A review of mixed-integer linear formulations for
+                    framework-based energy system models.
+                  </span>
                    Advances in applied energy, 16, 100190.</a
                 >
               </li>
               <li>
-                <a href="https://www.sciencedirect.com/science/article/pii/S1755008424000309" target="_blank"
+                <a
+                  href="https://www.sciencedirect.com/science/article/pii/S1755008424000309"
+                  target="_blank"
                   >Kerby, J., & Tarekegne, B. (2024).
-                    <span class="bold">
-                A guide to residential
-                  energy storage and rooftop solar: State net metering policies
-                  and utility rate tariff structures.
-                    </span>
-                   Renewable Energy Focus,
-                  100566.
+                  <span class="bold">
+                    A guide to residential energy storage and rooftop solar:
+                    State net metering policies and utility rate tariff
+                    structures.
+                  </span>
+                   Renewable Energy Focus, 100566.
                 </a>
               </li>
               <li>
-                <a href="https://ieeexplore.ieee.org/document/10892444" target="_blank"
+                <a
+                  href="https://ieeexplore.ieee.org/document/10892444"
+                  target="_blank"
                   >Grafenhorst, S., Demirel, G., Förderer, K., & Hagenmeyer, V.
                   (2024, November).
-                    <span class="bold">
-                  Grid Aware Portfolio Optimization of a
-                  Multi-Energy DER.
-                    </span>
-                  In 2024 IEEE Sustainable Power and Energy
-                  Conference (iSPEC) (pp. 245-250). IEEE.</a
-                >
-              </li>
-             
-              <li>
-                <a href="https://link.springer.com/chapter/10.1007/978-3-031-49215-0_63" target="_blank"
-                  >Yoon, S., Hwang, Y., Kim, W. B., & Lee, I. Y. (2023, July). 
-                    <span class="bold">
-                  A
-                  Study on GML-Based Encryption Technology for Open-Source
-                  Software License and Service Structure Analysis in Cloud-Based
-                  Micro Service Architecture Environment.
+                  <span class="bold">
+                    Grid Aware Portfolio Optimization of a Multi-Energy DER.
                   </span>
-                   In International
-                  Conference on Human-Computer Interaction (pp. 528-532). Cham:
-                  Springer Nature Switzerland.</a
+                  In 2024 IEEE Sustainable Power and Energy Conference
+                  (iSPEC) (pp. 245-250). IEEE.</a
                 >
               </li>
-              
+
+              <li>
+                <a
+                  href="https://link.springer.com/chapter/10.1007/978-3-031-49215-0_63"
+                  target="_blank"
+                  >Yoon, S., Hwang, Y., Kim, W. B., & Lee, I. Y. (2023, July).
+                  <span class="bold">
+                    A Study on GML-Based Encryption Technology for Open-Source
+                    Software License and Service Structure Analysis in
+                    Cloud-Based Micro Service Architecture Environment.
+                  </span>
+                  In International Conference on Human-Computer Interaction (pp.
+                  528-532). Cham: Springer Nature Switzerland.</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </section>
     </main>
     <footer>
-        <span>©</span>
-        <span>2025</span>
-        <span>-</span>
-        <p>All rights reserved</p>
-        <span>•</span>
-        <p>
-            Developed by the Smart Grids Lab
-        </p>
-        <span>•</span>
-        <span>Last update: July 2025</span>
+      <span>©</span>
+      <span>2025</span>
+      <span>-</span>
+      <p>All rights reserved</p>
+      <span>•</span>
+      <p>Developed by the Smart Grids Lab</p>
+      <span>•</span>
+      <span>Last update: July 2025</span>
     </footer>
   </body>
 </html>
