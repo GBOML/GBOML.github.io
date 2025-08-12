@@ -58,9 +58,11 @@ nav {
         display: flex;
         align-items: center;
         gap: 9px;
+        transition: all 0.2s ease-in-out;
       }
       a:hover {
-        color: #00bfff;
+        color: #99d5d0;
+        transform: scale(1.1);
       }
     }
   }
@@ -76,7 +78,7 @@ nav {
   }
 }
 
-/* Intro */
+/* About */
 
 .section-img {
   height: 20rem;
@@ -148,10 +150,12 @@ h2 {
   font-weight: 400;
   transition: color 0.2s;
   gap: 2px;
+  transition: all 0.2s ease-in-out;
 }
 
 .link-icons a:hover {
-  color: #00bfff;
+  color: #99d5d0;
+  transform: scale(1.1);
 }
 
 /* Papers */
@@ -162,6 +166,7 @@ h2 {
 
     li {
       font-size: 17px;
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -169,6 +174,21 @@ h2 {
     margin-bottom: 0.5rem;
   }
 }
+
+.code {
+  background: #e0f2f1;
+  color: #00544a;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-left: 4px;
+}
+.code:hover {
+  background: #b2dfdb;
+}
+
+/* Footer */
 
 footer {
   background-color: #23262e;
