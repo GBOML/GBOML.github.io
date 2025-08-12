@@ -17,6 +17,10 @@
     />
 
     <link rel="icon" type="image/png" href="./assets/gboml.png" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -97,7 +101,12 @@
               solvers, including structure-exploiting ones.
             </div>
           </div>
-          <img src="./assets/gboml.png" alt="GBOML logo" class="section-img" />
+
+          <img
+            src="./assets/gboml.png"
+            alt="GBOML logo"
+            class="section-img hero"
+          />
         </div>
       </section>
       <section id="links" class="main-links">
@@ -120,9 +129,9 @@
           </a>
         </div>
       </section>
-      <section id="papers">
+      <section id="papers" class="reveal">
         <h2>Papers</h2>
-        <div>
+        <div class="reveal">
           <h3>Papers about GBOML</h3>
           <div>
             <ul>
@@ -166,7 +175,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="reveal">
           <h3>Papers and presentations from the Smart Grids Lab using GBOML</h3>
           <div>
             <ul>
@@ -421,7 +430,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="reveal">
           <h3>Other papers using or citing GBOML</h3>
           <div>
             <ul>
