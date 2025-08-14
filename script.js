@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- HERO (main image) intro ---------- */
   const hero = document.querySelector('.hero');
   if (hero) {
-    const HERO_DELAY = prefersReduced ? 100 : 800; // was ~320ms; now 800ms
+    const HERO_DELAY = prefersReduced ? 100 : 600; // was ~320ms; now 800ms
     setTimeout(() => {
       requestAnimationFrame(() => hero.classList.add('is-visible'));
     }, HERO_DELAY);
