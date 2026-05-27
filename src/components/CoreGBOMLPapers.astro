@@ -1,7 +1,6 @@
 ---
 import ColumnListPaper from './ColumnListPaper.astro';
-import papers from '../list/external-papers.json';
-import ViewAllButton from './ViewAllButton.astro';
+import papers from '../list/core-gboml-papers.json';
 
 const coreGBOMLPapers = papers.slice(0, 3);
 ---
@@ -9,7 +8,6 @@ const coreGBOMLPapers = papers.slice(0, 3);
 <section class="core-papers-section">
     <div class="papers-header">
         <h2>Core GBOML Publications</h2>
-        <ViewAllButton sectionId="external-papers-list" />
     </div>
 
     <ColumnListPaper items={coreGBOMLPapers} />
@@ -26,6 +24,7 @@ const coreGBOMLPapers = papers.slice(0, 3);
         justify-content: space-between;
         align-items: center; 
         margin-top: 40px;
+        margin-bottom: 40px;
         gap: 40px;
     }
 

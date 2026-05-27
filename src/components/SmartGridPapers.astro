@@ -3,7 +3,11 @@ import Card from './Card.astro';
 import ViewAllButton from './ViewAllButton.astro';
 import papers from '../list/smart-grid-papers.json';
 
-const topPapers = papers.filter((paper) => paper['home-page']);
+const topPapers = [
+    papers.find((paper) => paper.id == "17")!,
+    papers.find((paper) => paper.id == "18")!,
+    papers.find((paper) => paper.id == "1")!
+];
 ---
 
 <section id="publications">
@@ -19,7 +23,7 @@ const topPapers = papers.filter((paper) => paper['home-page']);
         {topPapers.map(paper => (
             <Card
                 image={`./articles-img/${paper.image}`}
-                label={paper.publication ? paper.publication.split(',')[0] : 'Research'}
+                label={paper.publication ? paper.publication.split(',')[0] : 'Under review'}
                 title={paper.title}
                 authors={paper.authors}
                 link={paper['article-link']}

@@ -1,0 +1,16 @@
+[
+  {
+    "authors": "Miftari, B., Berger, M., Djelassi, H., & Ernst, D.",
+    "date": "2025",
+    "title": "GBOML: Graph-Based Optimization Modeling Language",
+    "publication": "Journal of Open Source Software, 7(72), 4158",
+    "article-link": "https://joss.theoj.org/papers/10.21105/joss.04158"
+  },
+  {
+    "authors": "Miftari, B., Berger, M., Djelassi, H., & Ernst, D.",
+    "date": "2024",
+    "title": "GBOML: A Structure-exploiting Optimization Modelling Language in Python",
+    "publication": "Optimization Methods and Software",
+    "article-link": "https://orbi.uliege.be/handle/2268/296930"
+  }
+]

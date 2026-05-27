@@ -17,7 +17,7 @@ const { items } = Astro.props;
 <div class="papers-list">
     {items.map(paper => (
         <Card
-            label={paper.publication ? paper.publication.split(',')[0] : 'Research'}
+            label={paper.publication ? paper.publication.split(',')[0] : 'Under review'}
             title={paper.title}
             authors={paper.authors}
             publication={paper.publication}

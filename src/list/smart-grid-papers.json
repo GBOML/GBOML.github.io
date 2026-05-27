@@ -1,159 +1,155 @@
 [
-    {
-        "id": "18",
-        "authors": "Larbanois, A., Miftari, B., Mouchamps, A., Derval, G., & Ernst, D.",
-        "date": "2025, May",
-        "title": "Lead-cooled Fast Reactor SMR integration: An off grid study case based on a real-life demandIntegration of offshore energy into national energy system: A case study on Belgium",
-        "article-link": "https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=HIHIuuEAAAAJ&citation_for_view=HIHIuuEAAAAJ:9yKSN-GCB0IC",
-        "code-link": "https://zenodo.org/records/16403205",
-        "image": "article-18.jpg",
-        "home-page": true
-    },
-    {
-        "id": "17",
-        "authors": "Mbenoun, J., Benzerga, A., Miftari, B., Detienne, G., Deschuyteneer, T., Vazquez, J., ... & Ernst, D.",
-        "date": "2025",
-        "title": "Integration of offshore energy into national energy system: A case study on Belgium",
-        "publication": "Applied Energy, 382, 125031",
-        "article-link": "https://www.sciencedirect.com/science/article/pii/S0306261924024152?casa_token=uTMa757inJoAAAAA:JJKk3Lrceoq75RSCDt3mg795hz2Q4yco78ap1i4r5d8MBcysgHJKJ8koIMHYt9au9bxki8zZcU4",
-        "code-link": "https://zenodo.org/records/14264974",
-        "image": "article-17.jpg",
-        "home-page": true
-    },
-    {
-        "id": "16",
-        "authors": "Larbanois, A., Dachet, V., Dubois, A., Fonteneau, R., & Ernst, D.",
-        "date": "2025",
-        "title": "Ammonia, Methane, Hydrogen and Methanol Produced in Remote Renewable Energy Hubs: a Comparative Quantitative Analysis",
-        "publication": "arXiv preprint arXiv:2507.07681",
-        "article-link": "https://arxiv.org/abs/2507.07681",
-        "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/energy_carrier_comparison?ref_type=heads",
-        "image": "article-16.png"
-    },
-    {
-        "id": "15",
-        "authors": "Dachet, V., Dubois, A., Miftari, B., Fonteneau, R., & Ernst, D.",
-        "date": "2025",
-        "title": "Remote Renewable Energy Hubs: A taxonomy",
-        "publication": "Energy Reports, 13, 3112-3120",
-        "article-link": "https://www.sciencedirect.com/science/article/pii/S2352484725001258",
-        "image": "article-15.jpg"
-    },
-    {
-        "id": "14",
-        "authors": "Dachet, V., & Ernst, D",
-        "date": "2025, March",
-        "title": "Remote Renewable Energy Hub: a concept for improving energy security",
-        "publication": "In Working session on decarbonization between the Walloon Parliament (Belgium) and the Parliament of North Rhine Westphalia (Germany)",
-        "article-link": "Dachet, V., & Ernst, D. (2025, March). Remote Renewable Energy Hub: a concept for improving energy security. In Working session on decarbonization between the Walloon Parliament (Belgium) and the Parliament of North Rhine Westphalia (Germany)."
-    },
-    {
-        "id": "13",
-        "authors": "Delcour, A.",
-        "date": "2025",
-        "title": "Future electricity mix and the role of natural gas in Western Europe's carbon-free transition",
-        "article-link": "Delcour, A. (2025). Future electricity mix and the role of natural gas in Western Europe's carbon-free transition."
-    },
-    {
-        "id": "12",
-        "authors": "Miftari, B., Louveaux, Q., Ernst, D., & Derval, G.",
-        "date": "2024",
-        "title": "Sensitivity analysis for linear changes of the constraint matrix of a linear program",
-        "publication": "arXiv preprint arXiv:2410.14443",
-        "article-link": "https://arxiv.org/abs/2410.14443"
-    },
-    {
-        "id": "11",
-        "authors": "Dauchat, L., Dachet, V., Fonteneau, R., & Ernst, D.",
-        "date": "2024",
-        "title": "Waste Heat Recovery in Remote Renewable Energy Hubs",
-        "publication": "In Proceedings of ECOS 2024-The 37th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems",
-        "article-link": ""
-    },
-    {
-        "id": "10",
-        "authors": "Victor, D., Amina, B., Diederik, C., Francesco, C., Raphaël, F., & Damien, E.",
-        "date": "2024",
-        "title": "Towards CO2 valorization in a multi remote renewable energy hub framework with uncertainty quantification",
-        "publication": "Journal of Environmental Management, 363, 121262",
-        "article-link": "https://www.sciencedirect.com/science/article/abs/pii/S0301479724012489",
-        "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/towards_co2_valorization?ref_type=heads"
-    },
-    {
-        "id": "9",
-        "authors": "Fonder, M., Counotte, P., Dachet, V., de Séjournet, J., & Ernst, D.",
-        "date": "2024",
-        "title": "Synthetic methane for closing the carbon loop: Comparative study of three carbon sources for remote carbon-neutral fuel synthetization",
-        "publication": "Applied Energy, 358, 122606",
-        "article-link": "https://www.sciencedirect.com/science/article/abs/pii/S0306261923019700",
-        "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/synthetic_methane_morocco?ref_type=heads"
-    },
-    {
-        "id": "8",
-        "authors": "Swerdtfegers, H.",
-        "date": "2024",
-        "title": "Travail de fin d'études et stage BR-Travail de fin d'études: Optimization of E-fuels Production and Water Utilisation in Remote Renewable Energy Hub with Carbon Capture and Storage BR-Stage",
-        "article-link": "https://matheo.uliege.be/handle/2268.2/19896",
-        "code-link": "https://github.com/HugoSwerdtfegers/TFE_FT-Products"
-    },
-    {
-        "id": "7",
-        "authors": "Cauz, M., Bolland, A., Miftari, B., Perret, L., Ballif, C., & Wyrsch, N.",
-        "date": "2023",
-        "title": "Reinforcement Learning for Joint Design and Control of Battery-PV Systems",
-        "publication": "arXiv preprint arXiv:2307.04244",
-        "article-link": "https://arxiv.org/abs/2307.04244"
-    },
-    {
-        "id": "6",
-        "authors": "Miftari, B., Derval, G., & Ernst, D.",
-        "date": "2023, July",
-        "title": "Sizing and Operations of Energy Systems Using GBOML",
-        "publication": "In Company meetings",
-        "article-link": "https://orbi.uliege.be/handle/2268/299668"
-    },
-    {
-        "id": "5",
-        "authors": "Miftari, B., Derval, G., & Ernst, D.",
-        "date": "2023",
-        "title": "Optimal Sizing and Operations Of Energy Systems Using GBOML",
-        "article-link": "https://orbi.uliege.be/handle/2268/299668"
-    },
-    {
-        "id": "4",
-        "authors": "Miftari, B., Derval, G., & Ernst, D.",
-        "date": "2023, March",
-        "title": "Tutorial: “An Introduction To Sizing And Operations of Energy Systems with GBOML”",
-        "publication": "In 2nd International workshop on 'Open Source Modeling and Simulation of Energy Systems' OSMSES 2023",
-        "article-link": "https://orbi.uliege.be/handle/2268/301220"
-    },
-    {
-        "id": "3",
-        "authors": "Miftari, B., Berger, M., Derval, G., & Ernst, D.",
-        "date": "2023, June",
-        "title": "Exploiting structure in MILP: a modeler’s perspective",
-        "publication": "In SIAM OP23",
-        "article-link": "https://orbi.uliege.be/handle/2268/303651"
-    },
-    {
-        "id": "2",
-        "authors": "Bolland, A., Boukas, I., Berger, M., & Ernst, D.",
-        "date": "2022",
-        "title": "Jointly Learning Environments and Control Policies with Projected Stochastic Gradient Ascent",
-        "publication": "Journal of Artificial Intelligence Research, 73, 117-171",
-        "article-link": "https://www.jair.org/index.php/jair/article/view/13350",
-        "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/microgrid?ref_type=heads"
-    },
-    {
-        "id": "1",
-        "authors": "Berger, M., Radu, D., Detienne, G., Deschuyteneer, T., Richel, A., & Ernst, D.",
-        "date": "2021",
-        "title": "Remote renewable hubs for carbon-neutral synthetic fuel production",
-        "publication": "Frontiers in Energy Research, 9, 671279",
-        "article-link": "https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2021.671279/full",
-        "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/remote_energy_supply_chain?ref_type=heads",
-        "image": "article-1.webp",
-        "home-page": true
-    }
-    
+  {
+    "id": "18",
+    "authors": "Larbanois, A., Miftari, B., Mouchamps, A., Derval, G., & Ernst, D.",
+    "date": "2025, May",
+    "title": "Lead-cooled Fast Reactor SMR integration: An off grid study case based on a real-life demandIntegration of offshore energy into national energy system: A case study on Belgium",
+    "article-link": "https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=HIHIuuEAAAAJ&citation_for_view=HIHIuuEAAAAJ:9yKSN-GCB0IC",
+    "code-link": "https://zenodo.org/records/16403205",
+    "image": "article-18.jpg"
+  },
+  {
+    "id": "17",
+    "authors": "Mbenoun, J., Benzerga, A., Miftari, B., Detienne, G., Deschuyteneer, T., Vazquez, J., ... & Ernst, D.",
+    "date": "2025",
+    "title": "Integration of offshore energy into national energy system: A case study on Belgium",
+    "publication": "Applied Energy, 382, 125031",
+    "article-link": "https://www.sciencedirect.com/science/article/pii/S0306261924024152?casa_token=uTMa757inJoAAAAA:JJKk3Lrceoq75RSCDt3mg795hz2Q4yco78ap1i4r5d8MBcysgHJKJ8koIMHYt9au9bxki8zZcU4",
+    "code-link": "https://zenodo.org/records/14264974",
+    "image": "article-17.jpg"
+  },
+  {
+    "id": "16",
+    "authors": "Larbanois, A., Dachet, V., Dubois, A., Fonteneau, R., & Ernst, D.",
+    "date": "2025",
+    "title": "Ammonia, Methane, Hydrogen and Methanol Produced in Remote Renewable Energy Hubs: a Comparative Quantitative Analysis",
+    "publication": "arXiv preprint arXiv:2507.07681",
+    "article-link": "https://arxiv.org/abs/2507.07681",
+    "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/energy_carrier_comparison?ref_type=heads",
+    "image": "article-16.png"
+  },
+  {
+    "id": "15",
+    "authors": "Dachet, V., Dubois, A., Miftari, B., Fonteneau, R., & Ernst, D.",
+    "date": "2025",
+    "title": "Remote Renewable Energy Hubs: A taxonomy",
+    "publication": "Energy Reports, 13, 3112-3120",
+    "article-link": "https://www.sciencedirect.com/science/article/pii/S2352484725001258",
+    "image": "article-15.jpg"
+  },
+  {
+    "id": "14",
+    "authors": "Dachet, V., & Ernst, D",
+    "date": "2025, March",
+    "title": "Remote Renewable Energy Hub: a concept for improving energy security",
+    "publication": "In Working session on decarbonization between the Walloon Parliament (Belgium) and the Parliament of North Rhine Westphalia (Germany)",
+    "article-link": "Dachet, V., & Ernst, D. (2025, March). Remote Renewable Energy Hub: a concept for improving energy security. In Working session on decarbonization between the Walloon Parliament (Belgium) and the Parliament of North Rhine Westphalia (Germany)."
+  },
+  {
+    "id": "13",
+    "authors": "Delcour, A.",
+    "date": "2025",
+    "title": "Future electricity mix and the role of natural gas in Western Europe's carbon-free transition",
+    "article-link": "Delcour, A. (2025). Future electricity mix and the role of natural gas in Western Europe's carbon-free transition."
+  },
+  {
+    "id": "12",
+    "authors": "Miftari, B., Louveaux, Q., Ernst, D., & Derval, G.",
+    "date": "2024",
+    "title": "Sensitivity analysis for linear changes of the constraint matrix of a linear program",
+    "publication": "arXiv preprint arXiv:2410.14443",
+    "article-link": "https://arxiv.org/abs/2410.14443"
+  },
+  {
+    "id": "11",
+    "authors": "Dauchat, L., Dachet, V., Fonteneau, R., & Ernst, D.",
+    "date": "2024",
+    "title": "Waste Heat Recovery in Remote Renewable Energy Hubs",
+    "publication": "In Proceedings of ECOS 2024-The 37th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems",
+    "article-link": ""
+  },
+  {
+    "id": "10",
+    "authors": "Victor, D., Amina, B., Diederik, C., Francesco, C., Raphaël, F., & Damien, E.",
+    "date": "2024",
+    "title": "Towards CO2 valorization in a multi remote renewable energy hub framework with uncertainty quantification",
+    "publication": "Journal of Environmental Management, 363, 121262",
+    "article-link": "https://www.sciencedirect.com/science/article/abs/pii/S0301479724012489",
+    "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/towards_co2_valorization?ref_type=heads"
+  },
+  {
+    "id": "9",
+    "authors": "Fonder, M., Counotte, P., Dachet, V., de Séjournet, J., & Ernst, D.",
+    "date": "2024",
+    "title": "Synthetic methane for closing the carbon loop: Comparative study of three carbon sources for remote carbon-neutral fuel synthetization",
+    "publication": "Applied Energy, 358, 122606",
+    "article-link": "https://www.sciencedirect.com/science/article/abs/pii/S0306261923019700",
+    "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/synthetic_methane_morocco?ref_type=heads"
+  },
+  {
+    "id": "8",
+    "authors": "Swerdtfegers, H.",
+    "date": "2024",
+    "title": "Travail de fin d'études et stage BR-Travail de fin d'études: Optimization of E-fuels Production and Water Utilisation in Remote Renewable Energy Hub with Carbon Capture and Storage BR-Stage",
+    "article-link": "https://matheo.uliege.be/handle/2268.2/19896",
+    "code-link": "https://github.com/HugoSwerdtfegers/TFE_FT-Products"
+  },
+  {
+    "id": "7",
+    "authors": "Cauz, M., Bolland, A., Miftari, B., Perret, L., Ballif, C., & Wyrsch, N.",
+    "date": "2023",
+    "title": "Reinforcement Learning for Joint Design and Control of Battery-PV Systems",
+    "publication": "arXiv preprint arXiv:2307.04244",
+    "article-link": "https://arxiv.org/abs/2307.04244"
+  },
+  {
+    "id": "6",
+    "authors": "Miftari, B., Derval, G., & Ernst, D.",
+    "date": "2023, July",
+    "title": "Sizing and Operations of Energy Systems Using GBOML",
+    "publication": "In Company meetings",
+    "article-link": "https://orbi.uliege.be/handle/2268/299668"
+  },
+  {
+    "id": "5",
+    "authors": "Miftari, B., Derval, G., & Ernst, D.",
+    "date": "2023",
+    "title": "Optimal Sizing and Operations Of Energy Systems Using GBOML",
+    "article-link": "https://orbi.uliege.be/handle/2268/299668"
+  },
+  {
+    "id": "4",
+    "authors": "Miftari, B., Derval, G., & Ernst, D.",
+    "date": "2023, March",
+    "title": "Tutorial: “An Introduction To Sizing And Operations of Energy Systems with GBOML”",
+    "publication": "In 2nd International workshop on 'Open Source Modeling and Simulation of Energy Systems' OSMSES 2023",
+    "article-link": "https://orbi.uliege.be/handle/2268/301220"
+  },
+  {
+    "id": "3",
+    "authors": "Miftari, B., Berger, M., Derval, G., & Ernst, D.",
+    "date": "2023, June",
+    "title": "Exploiting structure in MILP: a modeler’s perspective",
+    "publication": "In SIAM OP23",
+    "article-link": "https://orbi.uliege.be/handle/2268/303651"
+  },
+  {
+    "id": "2",
+    "authors": "Bolland, A., Boukas, I., Berger, M., & Ernst, D.",
+    "date": "2022",
+    "title": "Jointly Learning Environments and Control Policies with Projected Stochastic Gradient Ascent",
+    "publication": "Journal of Artificial Intelligence Research, 73, 117-171",
+    "article-link": "https://www.jair.org/index.php/jair/article/view/13350",
+    "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/microgrid?ref_type=heads"
+  },
+  {
+    "id": "1",
+    "authors": "Berger, M., Radu, D., Detienne, G., Deschuyteneer, T., Richel, A., & Ernst, D.",
+    "date": "2021",
+    "title": "Remote renewable hubs for carbon-neutral synthetic fuel production",
+    "publication": "Frontiers in Energy Research, 9, 671279",
+    "article-link": "https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2021.671279/full",
+    "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/remote_energy_supply_chain?ref_type=heads",
+    "image": "article-1.webp"
+  }
 ]
