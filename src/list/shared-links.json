@@ -1,0 +1,12 @@
+{
+    "documentation": {
+        "url": "https://gboml.readthedocs.io/en/latest/about_gboml.html",
+        "label": "Documentation",
+        "icon": "fa-solid fa-newspaper"
+    },
+    "github": {
+        "url": "https://github.com/GBOML/GBOML",
+        "label": "GitHub",
+        "icon": "fa-brands fa-github"
+    }
+}

@@ -1,0 +1,23 @@
+---
+interface Props {
+    sectionId: string;
+}
+
+const { sectionId } = Astro.props;
+---
+
+<a href={`/papers#${sectionId}`} class="view-all">View all papers →</a>
+
+<style>
+        .view-all {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-family: var(--font-family-secondary);
+        transition: all 0.2s ease-in-out;
+        white-space: nowrap;
+    }
+
+    .view-all:hover {
+        transform: translateX(4px);
+    }
+</style>

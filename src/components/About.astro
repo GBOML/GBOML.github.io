@@ -1,0 +1,64 @@
+<section id="about">
+    <p>
+        The <span>Graph-Based Optimization Modeling Language</span> (GBOML) is a modeling language for mathematical programming designed and implemented 
+        at the University of Liège, Belgium. GBOML enables the easy implementation of a broad class of structured mixed-integer linear programs 
+        typically found in applications ranging from energy system planning to supply chain management.
+    </p>
+    <p>
+        More precisely, the language is particularly well-suited for representing problems involving the <em>optimization of discrete-time dynamical systems 
+        over a finite time horizon</em> and possessing a block structure that can be encoded by a <em>hierarchical hypergraph</em>.
+    </p>
+    <p>
+        The language combines elements of both algebraic and object-oriented modeling languages in order to :
+        <ul>
+            <li>facilitate problem encoding and model re-use</li>
+            <li>speed up model generation</li>
+            <li>expose problem structure to specialised solvers</li>
+            <li>simplify post-processing</li>
+        </ul>
+    </p>
+    <p>
+        The GBOML parser, which is implemented in Python, turns GBOML input files into hierarchical graph data structures representing optimization models. 
+        The associated tool provides both a command-line interface and a Python API to construct models, and directly interfaces with a variety of open source 
+        and commercial solvers, including structure-exploiting ones.
+    </p>
+</section>
+
+<style>
+    section {
+        font-size: 1.1rem;
+        background-color: var(--secondary-color);
+    }
+
+    p {
+        width: 80%;
+        line-height: 1.6;
+    }
+
+    ul {
+        margin-top: 0;
+    }
+
+    li {
+        list-style: disc;
+    }
+
+    em {
+        color: var(--primary-color);
+        font-style: normal;
+    }
+
+    @media (max-width: 768px) {
+        section {
+            text-align: justify;
+        }
+
+        p {
+            width: 100%;
+        }
+
+        ul {
+            line-height: 1.4;
+        }
+    }
+</style>

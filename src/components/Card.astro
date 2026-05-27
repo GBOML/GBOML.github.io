@@ -1,0 +1,177 @@
+---
+interface Props {
+    image?: string;
+    label: string;
+    title: string;
+    authors: string;
+    publication?: string;
+    link?: string;
+    codeUrl?: string;
+}
+
+const { image, label, title, authors, publication, link, codeUrl } = Astro.props;
+---
+
+<div class="card" class:list={[{ 'card-no-image': !image }]}>
+    {image && <img src={image} alt={title} class="card-image" />}
+    <div class="card-content">
+        <span class="label">{label}</span>
+        <h3>{title}</h3>
+        <p class="authors">{authors}</p>
+        {publication && <p class="publication">{publication}</p>}
+        <div class="card-links">
+            {link && (
+                <a href={link} title="Open" target="_blank" rel="noopener noreferrer" class="link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Open
+                </a>
+            )}
+            {codeUrl && (
+                <a href={codeUrl} title="Code" class="link" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-code"></i>
+                    Code
+                </a>
+            )}
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: rgba(24, 28, 33, 0.8);
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+
+     .card:hover {
+        border-color: var(--border-color);
+        box-shadow: 0 8px 24px var(--shadow-color);
+        transform: translateY(-4px);
+    }
+
+    .card-image {
+        width: 100%;
+        height: 250px;
+        object-fit:contain;
+        display: block;
+        padding: 2px;
+        background-color: white;
+    } 
+
+    .label {
+        color: var(--primary-color);
+        font-family: var(--font-family-secondary);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin: 0;
+        color: var(--light-color);
+        line-height: 1.3;
+    }
+
+
+    .authors {
+        color: var(--text-color-secondary);
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .publication {
+        color: var(--text-color-secondary);
+        font-size: 0.9rem;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .card-links {
+        display: flex;
+        gap: 16px;
+        margin-top: auto;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-family: var(--font-family-secondary);
+        font-size: 0.9rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .link:hover {
+        transform: translateX(4px);
+        opacity: 0.8;
+    }
+
+    .card-content {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex: 1;
+        width: 100%;
+    }
+
+    .card.card-no-image {
+        border-bottom: 1px solid var(--border-color);
+        border-radius: 0;
+        background-color: transparent;
+        flex-direction: row;
+        padding: 24px;
+        gap: 24px;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: visible;
+    }   
+
+    .card.card-no-image:hover {
+        background-color: var(--border-color);
+        padding-left: 28px;
+        box-shadow: none;
+        transform: none;
+    }
+
+    .card.card-no-image .card-content {
+        padding: 0;
+        gap: 8px;
+    }
+
+    .card.card-no-image .label {
+        max-width: max-content;
+        background-color: var(--border-color);
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 0.75rem;
+    }
+
+    .card.card-no-image h3 {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        margin: 0;
+    }
+
+    .card.card-no-image .card-links {
+        margin-top: 10px;
+    }
+
+    .card.card-no-image .link:hover {
+        transform: scale(1.1);
+    }
+
+    @media (min-width: 2500px) {
+        .card-image {
+            height: 400px;
+        }
+    }
+    
+</style>

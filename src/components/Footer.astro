@@ -1,0 +1,72 @@
+---
+import links from '../list/shared-links.json';
+---
+
+<footer>
+    <div class="footer-left">
+        <span class="footer-logo">GBOML</span>
+        <span>&copy; 2026 GBOML. All rights reserved.</span>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href={links.documentation.url} target="_blank">
+            Documentation
+        </a>
+        <a href={links.github.url} target="_blank">
+            GitHub
+        </a>
+    </nav>
+</footer>
+
+<style>
+    footer {
+        padding: 40px 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+        color: var(--text-color-secondary);
+        background-color: var(--secondary-color);
+    }
+
+    .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .footer-logo {
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    nav {
+        display: flex;
+        gap: 30px;
+    }
+
+    nav a {
+        color: var(--text-color-secondary);
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    @media (max-width: 768px) {
+        footer {
+            padding: 20px 30px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        nav {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+    }
+</style>

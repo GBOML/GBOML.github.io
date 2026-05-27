@@ -1,0 +1,133 @@
+---
+import ButtonIcon from './UI/ButtonIcon.astro';
+import links from '../list/shared-links.json';
+import logo from '../assets/gboml.png';
+import { Image } from 'astro:assets';
+---
+
+<header>
+    <div class="header-title">
+        <Image src={logo} alt="GBOML Logo" class="logo"/>
+        <h1>
+            <a href="/">GBOML</a>
+        </h1>
+    </div>
+    
+    <nav>
+        <ul>
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="/#about">About</a></li>
+            <li class="nav-link"><a href="/#publications">Publications</a></li>
+        </ul>
+    </nav>
+    
+    <div class="nav-icons">
+         <ButtonIcon 
+            href={links.documentation.url} 
+            title={links.documentation.label} 
+            icon={links.documentation.icon}
+        />
+        <ButtonIcon 
+            href={links.github.url}
+            title={links.github.label}
+            icon={links.github.icon}
+        />
+    </div>
+</header>
+
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            header?.classList.add('hide-header');
+        } else {
+            header?.classList.remove('hide-header');
+        }
+        
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+</script>
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 120px;
+        background-color: var(--background-color);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+        z-index: 100;
+    }
+
+    .header-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    header .logo {
+        width: 35px;
+        height: 35px;
+        outline: 1px solid white;
+        border-radius: 100%;
+        outline-offset: -1px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    header.hide-header {
+        transform: translateY(-100%);
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    li {
+        list-style: none;
+        font-size: 1.1rem;
+    }
+
+    .nav-link {
+        transition: transform 0.2s ease-in-out;
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        transform: translateY(-2px);
+        color: var(--primary-color);
+    }
+
+    .nav-link:hover a {
+        color: var(--primary-color);
+    }
+
+    .nav-icons {
+        display: flex;
+        gap: 16px;
+    }
+
+    @media(max-width: 768px) {
+        header {
+            padding: 2px 30px;
+        }
+
+       nav {
+            display: none;
+        }
+    }
+</style>

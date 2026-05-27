@@ -1,0 +1,43 @@
+---
+import ColumnListPaper from './ColumnListPaper.astro';
+import papers from '../list/external-papers.json';
+import ViewAllButton from './ViewAllButton.astro';
+
+const coreGBOMLPapers = papers.slice(0, 3);
+---
+
+<section class="core-papers-section">
+    <div class="papers-header">
+        <h2>Core GBOML Publications</h2>
+        <ViewAllButton sectionId="external-papers-list" />
+    </div>
+
+    <ColumnListPaper items={coreGBOMLPapers} />
+</section>
+
+<style>
+    .core-papers-section {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    .papers-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin: 40px 0 40px 0;
+        color: var(--light-color);
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+</style>

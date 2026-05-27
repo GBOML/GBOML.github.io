@@ -1,0 +1,128 @@
+---
+import Button from './UI/Button.astro';
+import links from '../list/shared-links.json';
+import logo from '../assets/gboml.png';
+import { Image } from 'astro:assets';
+---
+
+<section>
+    <div class="text-container">
+        <h1>GBOML</h1>
+        <h2>Graph-Based Optimization Modeling Language</h2>
+        <p>A specialized language for modeling discrete-time optimization problems with a clear graph-based structure, designed for researchers and engineers.</p>
+
+        <div class="button-group">
+            <Button 
+                href={links.documentation.url} 
+                title={links.documentation.label} 
+                icon={links.documentation.icon}
+                label={links.documentation.label}
+            />
+            <Button 
+                href={links.github.url}
+                title={links.github.label}
+                icon={links.github.icon}
+                label={links.github.label}
+            />
+        </div>
+    </div>
+    
+    <div>
+        <Image src={logo} alt="GBOML Logo" class="logo"/>
+    </div>
+</section>
+
+<style>
+    section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    section > div {
+        height: 60vh;
+    }
+
+    .logo {
+        width: 550px;
+        height: 550px;
+        outline: 5px solid #f8f8f8;
+        border-radius: 100%;
+        outline-offset: -1px;
+    }
+
+    .text-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 35px;
+    }
+
+    h2 {
+        color: var(--primary-color);
+        font-size: 2rem;
+        font-weight:lighter;
+    }
+
+    p {
+        margin: 50px 0;
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .button-group {
+        display: flex;
+        gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+        section {
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            gap: 0;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            min-height: 100vh;
+        }
+
+        section > div {
+            height: auto;
+        }
+
+        .logo {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .text-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin: 30px 0;
+            font-size: 1rem;
+        }
+
+        .button-group {
+            justify-content: center;
+        }
+    }
+</style>

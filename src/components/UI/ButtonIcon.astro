@@ -1,0 +1,30 @@
+---
+interface Props {
+    href: string;
+    title: string;
+    icon: string;
+}
+
+const { href, title, icon } = Astro.props;
+---
+
+<a {href} {title} class="link-icon" target="_blank" rel="noopener noreferrer" aria-label={title}>
+    <i class={`${icon} fa-xl`}></i>
+</a>
+
+<style>
+    .link-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        color: var(--text-color);
+        transform-origin: center;
+    }
+
+    .link-icon:hover {
+        transform: scale(1.15) translateY(-2px);
+        color: var(--primary-color);
+    }
+</style>

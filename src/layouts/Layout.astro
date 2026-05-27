@@ -1,0 +1,46 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="/src/style/global.css" />
+		<meta name="generator" content={Astro.generator} />
+		<title>GBOML</title>
+	</head>
+	<body>
+		<Header />
+
+		<slot />
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+    	font-size: 18px;
+		margin: auto;
+		height: 100%;
+		color: var(--text-color);
+		background-color: var(--background-color);
+		scroll-behavior: smooth;
+	}
+
+	@media (max-width: 768px) {
+		html,
+		body {
+			font-size: 16px;
+		}
+	}
+</style>
