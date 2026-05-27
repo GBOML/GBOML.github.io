@@ -31,13 +31,20 @@ const coreGBOMLPapers = papers.slice(0, 3);
 
     h2 {
         font-size: 2.5rem;
-        margin: 40px 0 40px 0;
+        margin: 0;
         color: var(--light-color);
     }
 
     @media (max-width: 768px) {
         h2 {
             font-size: 1.8rem;
+        }
+
+        .papers-header {
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+            text-align: center;
         }
     }
 </style>
