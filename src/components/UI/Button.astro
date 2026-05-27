@@ -4,24 +4,26 @@ interface Props {
     title: string;
     icon: string;
     label: string;
+    color?: string;
 }
 
-const { href, title, icon, label } = Astro.props;
+const { href, title, icon, label, color } = Astro.props;
 ---
 
-<a {href} {title} class="button" target="_blank" rel="noopener noreferrer">
+<a {href} {title} class="button" style={color ? `--button-color: ${color}` : ''} target="_blank" rel="noopener noreferrer">
     <i class={`${icon} fa-xl`}></i>
     <span>{label}</span>
 </a>
 
 <style>
     .button {
+        --button-color: var(--secondary-color);
         display: flex;
         align-items: center;
         gap: 8px;
         padding: 12px 24px;
         border-radius: 8px;
-        background-color: var(--secondary-color);
+        background-color: var(--button-color);
         color: var(--text-color);
         text-decoration: none;
         transition: all 0.2s ease-in-out;
