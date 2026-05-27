@@ -26,6 +26,7 @@ const topPapers = [
                 label={paper.publication ? paper.publication.split(',')[0] : 'Under review'}
                 title={paper.title}
                 authors={paper.authors}
+                date={paper.date}
                 link={paper['article-link']}
                 codeUrl={paper['code-link']}
             />
@@ -54,7 +55,7 @@ const topPapers = [
     h2 {
         font-size: 3rem;
         margin: 0;
-        color: var(--light-color);
+        color: var(--text-color);
     }
 
     .papers-grid {

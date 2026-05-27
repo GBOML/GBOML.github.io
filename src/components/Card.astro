@@ -5,11 +5,12 @@ interface Props {
     title: string;
     authors: string;
     publication?: string;
+    date?: string;
     link?: string;
     codeUrl?: string;
 }
 
-const { image, label, title, authors, publication, link, codeUrl } = Astro.props;
+const { image, label, title, authors, publication, date, link, codeUrl } = Astro.props;
 ---
 
 <div class="card" class:list={[{ 'card-no-image': !image }]}>
@@ -19,6 +20,7 @@ const { image, label, title, authors, publication, link, codeUrl } = Astro.props
         <h3>{title}</h3>
         <p class="authors">{authors}</p>
         {publication && <p class="publication">{publication}</p>}
+        {date && <p class="date">{date}</p>}
         <div class="card-links">
             {link && (
                 <a href={link} title="Open" target="_blank" rel="noopener noreferrer" class="link">
@@ -73,7 +75,7 @@ const { image, label, title, authors, publication, link, codeUrl } = Astro.props
     h3 {
         font-size: 1.2rem;
         margin: 0;
-        color: var(--light-color);
+        color: var(--text-color-secondary);
         line-height: 1.3;
     }
 
@@ -89,6 +91,12 @@ const { image, label, title, authors, publication, link, codeUrl } = Astro.props
         font-size: 0.9rem;
         margin: 0;
         font-style: italic;
+    }
+
+    .date {
+        color: var(--text-color-secondary);
+        font-size: 0.8rem;
+        margin: 0;
     }
 
     .card-links {
@@ -120,12 +128,13 @@ const { image, label, title, authors, publication, link, codeUrl } = Astro.props
         gap: 12px;
         flex: 1;
         width: 100%;
+        background-color: var(--secondary-color)
     }
 
     .card.card-no-image {
         border-bottom: 1px solid var(--border-color);
         border-radius: 0;
-        background-color: transparent;
+        background-color: var(--secondary-color);
         flex-direction: row;
         padding: 24px;
         gap: 24px;
@@ -135,7 +144,7 @@ const { image, label, title, authors, publication, link, codeUrl } = Astro.props
     }   
 
     .card.card-no-image:hover {
-        background-color: var(--border-color);
+        background-color: var(--secondary-color);
         padding-left: 28px;
         box-shadow: none;
         transform: none;
@@ -148,7 +157,7 @@ const { image, label, title, authors, publication, link, codeUrl } = Astro.props
 
     .card.card-no-image .label {
         max-width: max-content;
-        background-color: var(--border-color);
+        background-color: var(--background-color);
         padding: 6px 12px;
         border-radius: 6px;
         font-size: 0.75rem;

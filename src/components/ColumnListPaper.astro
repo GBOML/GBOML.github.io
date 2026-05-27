@@ -6,6 +6,7 @@ interface Props {
         title: string;
         authors: string;
         publication?: string;
+        date?: string;
         'article-link'?: string;
         'code-link'?: string;
     }[];
@@ -17,10 +18,10 @@ const { items } = Astro.props;
 <div class="papers-list">
     {items.map(paper => (
         <Card
-            label={paper.publication ? paper.publication.split(',')[0] : 'Under review'}
+            label={paper.publication ?? 'Under review'}
             title={paper.title}
             authors={paper.authors}
-            publication={paper.publication}
+            date={paper.date}
             link={paper['article-link']}
             codeUrl={paper['code-link']}
         />
