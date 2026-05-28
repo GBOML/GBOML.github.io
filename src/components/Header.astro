@@ -6,6 +6,11 @@ import { Image } from 'astro:assets';
 ---
 
 <header>
+    <button class="menu-button" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
     <div class="header-title">
         <Image src={logo} alt="GBOML Logo" class="logo"/>
         <h1>
@@ -13,7 +18,15 @@ import { Image } from 'astro:assets';
         </h1>
     </div>
     
-    <nav>
+    <nav id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li class="nav-link"><a href="/#home">Home</a></li>
+            <li class="nav-link"><a href="/#about">About</a></li>
+            <li class="nav-link"><a href="/papers">Publications</a></li>
+        </ul>
+    </nav>
+
+    <nav class="desktop-nav">
         <ul>
             <li class="nav-link"><a href="/#home">Home</a></li>
             <li class="nav-link"><a href="/#about">About</a></li>
@@ -38,7 +51,24 @@ import { Image } from 'astro:assets';
 <script>
     let lastScrollTop = 0;
     const header = document.querySelector('header');
+    const menuButton = document.querySelector('.menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    menuButton?.addEventListener('click', () => {
+        menuButton.classList.toggle('active');
+        mobileMenu?.classList.toggle('show');
+    });
+
+    // Close mobile menu when a link is clicked
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuButton?.classList.remove('active');
+            mobileMenu?.classList.remove('show');
+        });
+    });
+
+    // Hide/show header au scroll
     window.addEventListener('scroll', () => {
         const scrollTop = window.scrollY;
         
@@ -64,6 +94,34 @@ import { Image } from 'astro:assets';
         width: 100%;
         transition: transform 0.3s ease-in-out;
         z-index: 100;
+        box-sizing: border-box;
+    }
+
+    .menu-button {
+        display: none;
+        flex-direction: column;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        color: var(--text-color);
+        font-size: 1.5rem;
+    }
+
+    .menu-button i {
+        width: 24px;
+    }
+
+    .menu-button i:nth-child(2) {
+        display: none;
+    }
+
+    .menu-button.active i:nth-child(1) {
+        display: none;
+    }
+
+    .menu-button.active i:nth-child(2) {
+        display: block;
     }
 
     .header-title {
@@ -93,6 +151,7 @@ import { Image } from 'astro:assets';
         justify-content: space-between;
         align-items: center;
         gap: 100px;
+        padding-inline-start: 0;
     }
 
     li {
@@ -121,13 +180,62 @@ import { Image } from 'astro:assets';
         gap: 16px;
     }
 
+    .desktop-nav {
+        display: flex;
+    }
+
+    .mobile-menu {
+        font-size: 0.7rem;
+        display: none;
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        padding: 10px 30px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    
+    .mobile-menu.show {
+        border-top: 1px solid var(--border-color);
+        max-height: 200px;
+        opacity: 1;
+    }
+
+    .mobile-menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     @media(max-width: 1024px) {
         header {
-            padding: 2px 30px;
+            padding: 8px 30px;
         }
 
-       nav {
+        .menu-button {
+            display: flex;
+            order: -1;
+        }
+
+        .desktop-nav {
             display: none;
+        }
+
+        .header-title {
+            flex: 1;
+            justify-content: center;
+        }
+
+        .mobile-menu {
+            display: flex;
+        }
+
+        .nav-icons {
+            order: 3;
         }
     }
 </style>

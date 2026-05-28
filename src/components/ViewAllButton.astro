@@ -1,12 +1,12 @@
 ---
 interface Props {
-    sectionId: string;
+    sectionId?: string;
 }
 
 const { sectionId } = Astro.props;
 ---
 
-<a href={`/papers#${sectionId}`} class="view-all">View all papers →</a>
+<a href={sectionId ? `/papers#${sectionId}` : `/papers`} class="view-all">View all papers →</a>
 
 <style>
         .view-all {
