@@ -1,31 +1,32 @@
 ---
-import papers from '../../list/smart-grid-papers.json';
-import externalPapers from '../../list/external-papers.json';
+import papers from '../../list/use-gboml-papers.json';
+import core_papers from '../../list/core-gboml-papers.json';
 import Layout from '../../layouts/Layout.astro';
 import ColumnListPaper from '../../components/ColumnListPaper.astro';
 ---
 
 <Layout>
-    <section id="smart-grids-papers" class="core-papers-section">
-        <h2>Smart Grids Lab Papers</h2>
+    <section id="use-gboml-papers" class="core-papers-section">
+        <h2>Papers using GBOML</h2>
 
         <ColumnListPaper items={papers} />
     </section>
 
-    <section id="external-papers-list">
-        <h3>External Papers</h3>
+    <section id="core-gboml-papers" class="core-papers-section">
+        <h2>Core GBOML Papers</h2>
 
-        <ColumnListPaper items={externalPapers} />
+        <ColumnListPaper items={core_papers} />
     </section>
 </Layout>
 
 <style>
     section {
         height: auto;
+        min-height: auto;
         padding: 120px 120px 60px 120px;
     }
 
-    #external-papers-list {
+    #core-gboml-papers {
         padding-top: 0;
     }
 

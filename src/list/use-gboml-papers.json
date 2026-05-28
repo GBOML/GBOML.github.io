@@ -1,0 +1,97 @@
+[
+  {
+    "id": "12",
+    "authors": "Mbenouna, J., Costa, A., Dachet, V., Fonteneau, R., Dubois, L., Thomas, D., De Weirel, G., & Ernst, D.",
+    "date": "2026",
+    "title": "Towards the integration of Remote Renewable Energy Hubs with CCUS chain for a future energy system: the Belgian case",
+    "article-link": "https://orbi.uliege.be/handle/2268/344592"
+  },
+  {
+    "id": "11",
+    "authors": "Dachet, V., Maio, A., Counotte, P., Fonteneau, R., Ernst, D.",
+    "date": "2026",
+    "title": "Remote Renewable Energy Hubs in the High Seas Using Batteries as Energy Vector",
+    "publication": "Proceedings of the 39th International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy Systems",
+    "article-link": "https://orbi.uliege.be/handle/2268/327232"
+  },
+  {
+    "id": "10",
+    "authors": "Larbanois, A., Miftari, B., Mouchamps, A., Derval, G., & Ernst, D.",
+    "date": "2025, May",
+    "title": "Lead-cooled Fast Reactor SMR integration: An off grid study case based on a real-life demandIntegration of offshore energy into national energy system: A case study on Belgium",
+    "article-link": "https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=HIHIuuEAAAAJ&citation_for_view=HIHIuuEAAAAJ:9yKSN-GCB0IC",
+    "code-link": "https://zenodo.org/records/16403205",
+    "image": "article-10.jpg"
+  },
+  {
+    "id": "9",
+    "authors": "Mbenoun, J., Benzerga, A., Miftari, B., Detienne, G., Deschuyteneer, T., Vazquez, J., ... & Ernst, D.",
+    "date": "2025",
+    "title": "Integration of offshore energy into national energy system: A case study on Belgium",
+    "publication": "Applied Energy, 382, 125031",
+    "article-link": "https://www.sciencedirect.com/science/article/pii/S0306261924024152?casa_token=uTMa757inJoAAAAA:JJKk3Lrceoq75RSCDt3mg795hz2Q4yco78ap1i4r5d8MBcysgHJKJ8koIMHYt9au9bxki8zZcU4",
+    "code-link": "https://zenodo.org/records/14264974",
+    "image": "article-9.jpg"
+  },
+  {
+    "id": "8",
+    "authors": "Larbanois, A., Dachet, V., Dubois, A., Fonteneau, R., & Ernst, D.",
+    "date": "2025",
+    "title": "Ammonia, Methane, Hydrogen and Methanol Produced in Remote Renewable Energy Hubs: a Comparative Quantitative Analysis",
+    "publication": "arXiv preprint arXiv:2507.07681",
+    "article-link": "https://arxiv.org/abs/2507.07681",
+    "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/energy_carrier_comparison?ref_type=heads"
+  },
+  {
+    "id": "7",
+    "authors": "Kerby, J., Rucavado Rojas, D., & Tarekegne, B.",
+    "date": "2025",
+    "title": "Rooftop solar and energy storage programs can remediate energy-limiting behaviors of energy insecure households in the United States",
+    "publication": "Commun Earth Environ 6, 621",
+    "article-link": "https://www.nature.com/articles/s43247-025-02517-5"
+  },
+  {
+    "id": "5",
+    "authors": "Victor, D., Amina, B., Diederik, C., Francesco, C., Raphaël, F., & Damien, E.",
+    "date": "2024",
+    "title": "Towards CO2 valorization in a multi remote renewable energy hub framework with uncertainty quantification",
+    "publication": "Journal of Environmental Management, 363, 121262",
+    "article-link": "https://www.sciencedirect.com/science/article/abs/pii/S0301479724012489",
+    "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/towards_co2_valorization?ref_type=heads"
+  },
+  {
+    "id": "4",
+    "authors": "Fonder, M., Counotte, P., Dachet, V., de Séjournet, J., & Ernst, D.",
+    "date": "2024",
+    "title": "Synthetic methane for closing the carbon loop: Comparative study of three carbon sources for remote carbon-neutral fuel synthetization",
+    "publication": "Applied Energy, 358, 122606",
+    "article-link": "https://www.sciencedirect.com/science/article/abs/pii/S0306261923019700",
+    "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/synthetic_methane_morocco?ref_type=heads"
+  },
+  {
+    "id": "3",
+    "authors": "Kerby, J., & Tarekegne, B.",
+    "date": "2024",
+    "title": "A guide to residential energy storage and rooftop solar: State net metering policies and utility rate tariff structures",
+    "publication": "Renewable Energy Focus, Volume 49, June 2024, 100566",
+    "article-link": "https://www.sciencedirect.com/science/article/pii/S1755008424000309"
+  },
+  {
+    "id": "2",
+    "authors": "Cauz, M., Bolland, A., Miftari, B., Perret, L., Ballif, C., & Wyrsch, N.",
+    "date": "2023",
+    "title": "Reinforcement Learning for Joint Design and Control of Battery-PV Systems",
+    "publication": "arXiv preprint arXiv:2307.04244",
+    "article-link": "https://arxiv.org/abs/2307.04244"
+  },
+  {
+    "id": "1",
+    "authors": "Berger, M., Radu, D., Detienne, G., Deschuyteneer, T., Richel, A., & Ernst, D.",
+    "date": "2021",
+    "title": "Remote renewable hubs for carbon-neutral synthetic fuel production",
+    "publication": "Frontiers in Energy Research, 9, 671279",
+    "article-link": "https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2021.671279/full",
+    "code-link": "https://gitlab.uliege.be/smart_grids/public/gboml/-/tree/master/examples/remote_energy_supply_chain?ref_type=heads",
+    "image": "article-1.webp"
+  }
+]

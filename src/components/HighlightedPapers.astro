@@ -1,11 +1,11 @@
 ---
 import Card from './Card.astro';
 import ViewAllButton from './ViewAllButton.astro';
-import papers from '../list/smart-grid-papers.json';
+import papers from '../list/use-gboml-papers.json';
 
 const topPapers = [
-    papers.find((paper) => paper.id == "17")!,
-    papers.find((paper) => paper.id == "18")!,
+    papers.find((paper) => paper.id == "9")!,
+    papers.find((paper) => paper.id == "10")!,
     papers.find((paper) => paper.id == "1")!
 ];
 ---
@@ -14,7 +14,7 @@ const topPapers = [
     <div class="papers-header">
         <div>
             <p class="section-label">RESEARCH HIGHLIGHTS</p>
-            <h2>Smart Grids Lab Papers</h2>
+            <h2>Papers using GBOML</h2>
         </div>
          <ViewAllButton sectionId="smart-grids-papers" />
     </div>
