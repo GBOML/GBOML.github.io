@@ -1,8 +1,14 @@
 ---
 import links from '../list/shared-links.json';
+
+interface Props {
+    mode?: "light" | "dark";
+}
+
+const { mode= "light" } = Astro.props;
 ---
 
-<footer>
+<footer style={`background-color: ${mode === "light" ? "var(--background-color)" : "var(--secondary-color)"};`}>
     <div class="footer-left">
         <span class="footer-logo">GBOML</span>
         <span>&copy; 2026 GBOML. All rights reserved.</span>
@@ -28,7 +34,6 @@ import links from '../list/shared-links.json';
         align-items: center;
         font-size: 0.8rem;
         color: var(--text-color-secondary);
-        background-color: var(--secondary-color);
     }
 
     .footer-left {
