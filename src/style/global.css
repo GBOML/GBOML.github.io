@@ -46,7 +46,7 @@ footer {
   scroll-snap-align: end;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section {
     padding: 20px 30px;
     height: auto;
