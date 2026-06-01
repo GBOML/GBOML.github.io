@@ -8,7 +8,7 @@
   --secondary-color: #edeeef;
   --background-color: #fafbfb;
   --text-color: #191c1d;
-  --text-color-secondary: #3b3d3d;
+  --text-color-secondary: #595c5c;
   --light-color: #e0e2e9;
   --border-color: #a9b3b6;
   --shadow-color: rgba(152, 206, 237, 0.15);
@@ -49,6 +49,5 @@ footer {
 @media (max-width: 1024px) {
   section {
     padding: 20px 30px;
-    height: auto;
   }
 }
